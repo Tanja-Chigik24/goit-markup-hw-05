@@ -495,6 +495,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-form {
@@ -587,6 +588,7 @@ button {
   right: 24px;
   top: 24px;
   border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   fill: #2e2f42;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
@@ -608,12 +610,13 @@ button {
   background-color: #404bbf;
 }
 
+.modal-close:hover,
+.modal-close:focus + .modal-icon-close {
+  fill: #ffffff;
+}
+
 .modal-icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-icon-close:hover,
-.modal-icon-close:focus {
-  fill: #ffffff;
 }
 
 .modal-title {
@@ -625,13 +628,12 @@ button {
   color: #2e2f42;
   max-width: 360px;
   margin-bottom: 16px;
-  margin-top: 48px;
 }
 .modal-field {
   margin-bottom: 8px;
 }
 
-.modal-field .modal-text {
+.modal-textarea {
   margin-bottom: 16px;
 }
 
@@ -708,7 +710,7 @@ button {
   border-color: #4d5ae5;
 }
 
-.modal-field privasy {
+.privasy {
   margin-bottom: 24px;
 }
 .check-text {
