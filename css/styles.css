@@ -592,7 +592,6 @@ button {
   fill: #2e2f42;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-  border: none;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -610,7 +609,7 @@ button {
   background-color: #404bbf;
 }
 
-.modal-close:hover,
+.modal-close:hover + .modal-icon-close,
 .modal-close:focus + .modal-icon-close {
   fill: #ffffff;
 }
@@ -729,7 +728,7 @@ button {
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
-.modal-chek:checked + .check-text span {
+.modal-chek:checked + .modal-icon-check {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
