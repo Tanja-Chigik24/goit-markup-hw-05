@@ -607,6 +607,7 @@ button {
 .modal-close:hover,
 .modal-close:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .modal-close:hover + .modal-icon-close,
@@ -720,7 +721,9 @@ button {
   color: #8e8f99;
   align-items: center;
 }
-
+.check-text span {
+  display: inline-flex;
+}
 .check-link {
   line-height: 1.33;
   letter-spacing: 0.02em;
@@ -728,7 +731,7 @@ button {
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
-.modal-chek:checked + .modal-icon-check {
+.modal-chek:checked + .check-text span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
